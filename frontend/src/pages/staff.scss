@@ -1,0 +1,86 @@
+.staff-body {
+  width: 100%;
+  padding: 20px;
+}
+
+.main-div-staff {
+  display: flex;
+  width: 100%;
+  .sraff-summry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.add-btn {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.total-staff-heading {
+  margin-top: 20px;
+  height: 150px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 10px;
+  padding: 20px;
+  .bal {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    justify-content: start;
+  }
+}
+.filter-staff {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  button {
+    display: flex;
+    align-items: center;
+    background: #eff6ff;
+    padding: 10px 24px;
+    width: auto;
+    min-width: auto;
+    color: #0066fd;
+    font-weight: 600;
+    border: #eff6ff;
+  }
+}
+
+.field-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.staff-name-box {
+  display: flex;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  height: 50px;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px;
+  .left-box {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px;
+    p {
+      margin: 0px;
+    }
+  }
+  .right-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p {
+      margin: 0px;
+    }
+  }
+}

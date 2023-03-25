@@ -1,0 +1,37 @@
+.main-sidebar {
+  width: 300px;
+  border: 1px solid black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(17, 39, 72);
+  .side-heading {
+    color: aliceblue;
+    font-size: 22px;
+  }
+  .side-footer {
+    position: absolute;
+    bottom: 30px;
+    color: aliceblue;
+  }
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  a {
+    gap: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 30px;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    color: aliceblue;
+    &:hover {
+      background: rgba(0, 102, 253, 0.1);
+    }
+  }
+}
