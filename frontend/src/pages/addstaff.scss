@@ -1,0 +1,187 @@
+.add-staff-body {
+  width: 100%;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.step-form {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  .form-steps {
+    display: flex;
+    gap: 20px;
+    .circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 2px solid rgb(0, 102, 253);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: rgb(239, 246, 255);
+      color: rgb(0, 102, 253);
+      font-size: 30px;
+    }
+    .datas {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+
+      p {
+        margin: 0px;
+      }
+    }
+  }
+}
+
+.lines {
+  margin-left: 30px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .line {
+    width: 100%;
+    border: 2px solid black;
+    border-style: dashed;
+  }
+}
+.step-2 {
+  margin-left: 20px;
+}
+.step1-details {
+  margin-top: 40px;
+  padding-left: 20px;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  .s1 {
+    p {
+      margin: 0px;
+      color: black;
+      font-size: 20px;
+    }
+  }
+  .s2 {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-right: 30px;
+    .name-field {
+      width: 50%;
+    }
+    p {
+      margin: 0px;
+
+      font-size: 20px;
+    }
+  }
+  .s3 {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding-right: 30px;
+    .name-field {
+      width: 50%;
+    }
+    p {
+      margin: 0px;
+
+      font-size: 20px;
+    }
+  }
+}
+.bottom-btn-div {
+  position: fixed;
+
+  height: 80px;
+  right: 0;
+  width: 100%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  bottom: 0px;
+  .btn-bottom {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 100%;
+    margin-right: 30px;
+    gap: 20px;
+  }
+}
+
+.toggles {
+  background-color: rgb(0, 102, 253);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(0, 102, 253);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.accordions {
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+  border-radius: 5px;
+}
+.accordion-button {
+  &::after {
+    content: none;
+  }
+}
+.ac-btn {
+  display: flex;
+  justify-content: space-between;
+  p {
+    margin: 0px;
+  }
+}
+.basicDA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.step2-bottoms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 10px;
+  p {
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+.accordion-item {
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em !important;
+  border-radius: 5px !important;
+}
+
+.accordion-item2 {
+  margin-top: 20px;
+
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+    rgba(90, 125, 188, 0.05) 0px 0.25em 1em !important;
+  border-radius: 5px !important;
+}
