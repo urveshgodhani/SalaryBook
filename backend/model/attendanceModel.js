@@ -21,6 +21,10 @@ const attendanceSchema = mongoose.Schema(
       enum: ["P", "A", "HD", "PL"],
       required: true,
     },
+    isEditedRecord: {
+      type: Boolean,
+      default: false,
+    },
     overtime: {
       perHourRupee: {
         type: Number,

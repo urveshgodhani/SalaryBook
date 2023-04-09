@@ -2,7 +2,6 @@ const staffModel = require("../../model/staffModel");
 const Ajv = require("ajv").default;
 const addFormats = require("ajv-formats");
 const ajv = new Ajv({ allErrors: true });
-const ObjectId = require("mongodb").ObjectId;
 addFormats(ajv);
 require("ajv-keywords");
 require("ajv-errors")(ajv);
@@ -31,7 +30,6 @@ exports.addStaff = async (req, res, next) => {
   try {
     const orgId = req.org._id.toString();
     const workingWeekDay = JSON.parse(req.body.workingWeekDay);
-    console.log(workingWeekDay, orgId);
     const DayOfWorking = findDayOfWorking(workingWeekDay);
     const NoOFDays = req.body.salary.base / DayOfWorking.length;
     const data = {
@@ -56,7 +54,7 @@ exports.addStaff = async (req, res, next) => {
       res.status(200).json({ sucess: true, message: staffData });
     }
   } catch (error) {
-    console.log("Staff is creat error");
+    console.log("catch in addStaff");
     next(error);
   }
 };
@@ -75,8 +73,9 @@ exports.dailyAttendanceForStaff = async (req, res, next) => {
       const staff = staffData.workingWeekDay;
       if (staff[dayOfWeekIndex] === 1) attendanceList.push(staffData);
     }, Promise.resolve());
-    res.status(200).json({ attendanceList });
+    res.status(200).json({ sucess: true, message: attendanceList });
   } catch (error) {
+    console.log("catch in dailyAttendanceForStaff");
     next(error);
   }
 };

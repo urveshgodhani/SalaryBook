@@ -6,7 +6,7 @@ const attendanceValidator = {
   properties: {
     date: {
       type: "string",
-      format: "datetime",
+      format: "date-time",
       errorMessage: {
         format: "Only Date-Time formate allow",
       },
@@ -32,6 +32,10 @@ const attendanceValidator = {
         type: "AttendanceType must be a string",
       },
     },
+    isEditedRecord: {
+      type: "boolean",
+      default: false,
+    },
     overtime: {
       type: "object",
       properties: {
@@ -39,7 +43,8 @@ const attendanceValidator = {
         totalHourOfWork: { type: "number" },
       },
       errorMessage: {
-        properties: "PerHourRupee and TotalHourOfWork must be a fill both",
+        "properties.perHourRupee": "PerHourRupee must be a fill",
+        "properties.totalHourOfWork": "totalHourOfWork must be a fill",
       },
     },
     fine: {
@@ -49,7 +54,8 @@ const attendanceValidator = {
         totalHourOfLateEntryOrEaryOut: { type: "number" },
       },
       errorMessage: {
-        properties: "PerHourRupee and TotalHour must be a fill both",
+        "properties.perHourRupee": "PerHourRupee must be a fill",
+        "properties.totalHourOfLateEntryOrEaryOut": "TotalHour must be a fill",
       },
     },
   },
